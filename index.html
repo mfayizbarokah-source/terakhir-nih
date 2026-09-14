@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For My Sayang ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div id="hearts-container"></div>
+
+    <!-- ================= PAGE 1 ================= -->
+    <section class="page active" id="page1">
+
+        <div class="glass-card login-card">
+
+            <div class="heart-icon">❤️</div>
+
+            <h1>Welcomee my princess!!</h1>
+
+            <p class="subtitle">
+                Biar ngga salah orang, coba tulis nama kamu yang lengkap yaa!!
+            </p>
+
+            <div class="input-group">
+
+                <label>Nama kamu siapa? 💕</label>
+
+                <input
+                    type="text"
+                    id="nameInput"
+                    placeholder="Masukkan nama..."
+                    autocomplete="off"
+                >
+
+                <small id="nameMessage"></small>
+
+            </div>
+
+            <div class="choice-group">
+
+                <label>Kamu emang siapanya aku?</label>
+
+                <div class="choices">
+
+                    <button
+                        class="choice"
+                        data-choice="pacarku"
+                    >
+                        Pacarku ❤️
+                    </button>
+
+                    <button
+                        class="choice"
+                        data-choice="istrinya"
+                    >
+                        Istrinya Fayiz 💍
+                    </button>
+
+                    <button
+                        class="choice"
+                        data-choice="both"
+                    >
+                        Dua-duanya donggg 😘
+                    </button>
+
+                </div>
+
+            </div>
+
+            <button
+                class="main-btn"
+                id="startBtn"
+                disabled
+            >
+                Lanjutkan ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PAGE 2 ================= -->
+    <section class="page photo-page" id="page2">
+
+        <div class="photo-overlay"></div>
+
+        <div class="birthday-content">
+
+            <div class="sparkle">✨</div>
+
+            <h1>
+                happy birthday
+                <span>&</span>
+                anniversary ya sayangg ❤️
+            </h1>
+
+            <p>
+                Ga kerasa yaa udaa tambah umurnya hahahaha
+            </p>
+
+        </div>
+
+        <button
+            class="next-btn"
+            onclick="nextPage()"
+        >
+            Lanjutkan →
+        </button>
+
+    </section>
+
+
+    <!-- ================= PAGE 3 ================= -->
+    <section class="page" id="page3">
+
+        <div class="question-card">
+
+            <div class="big-heart">💗</div>
+
+            <h1>kamu sayang aku ga?</h1>
+
+            <p>Pilih jawaban yang jujur yaa 😚</p>
+
+            <div class="love-bubbles">
+
+                <button
+                    class="love-bubble yes-bubble"
+                    id="yesBubble"
+                >
+                    sayanggg bangettt!!! ❤️
+                </button>
+
+                <button
+                    class="love-bubble no-bubble"
+                    id="noBubble"
+                >
+                    G
+                </button>
+
+            </div>
+
+        </div>
+
+        <button
+            class="next-btn"
+            id="page3Next"
+            onclick="nextPage()"
+            disabled
+        >
+            Lanjutkan →
+        </button>
+
+    </section>
+
+
+    <!-- ================= PAGE 4 ================= -->
+    <section class="page" id="page4">
+
+        <div class="love-message">
+
+            <div class="floating-heart">❤️</div>
+
+            <h1>
+                iyaa aku tau kok
+                <br>
+                kamu bakal sayang aku 🥰
+            </h1>
+
+            <p>
+                Karena aku juga sayang kamu lebih banyakkk ❤️
+            </p>
+
+            <div class="heart-line">
+                💕 💗 💕
+            </div>
+
+        </div>
+
+        <button
+            class="next-btn"
+            onclick="nextPage()"
+        >
+            Lanjutkan →
+        </button>
+
+    </section>
+
+
+    <!-- ================= PAGE 5 ================= -->
+    <section class="page" id="page5">
+
+        <div class="letter-card">
+
+            <div class="letter-decoration">
+                💌
+            </div>
+
+            <h2>Untuk Sayangku ❤️</h2>
+
+            <p id="letterText">
+                semoga dihubungan kita yang udah 3 tahun dan umur kamu yang udah 22 TAHUN,
+                bisa segalanya tercapai cita-cita kita ya sayanggg,
+                dan bisa mewujudkan wishlist kitaa bersama,
+                sama akuu terus yaa ❤️
+            </p>
+
+            <div class="signature">
+                Love,
+                <br>
+                Fayiz ❤️
+            </div>
+
+        </div>
+
+        <button
+            class="next-btn"
+            onclick="nextPage()"
+        >
+            Lanjutkan →
+        </button>
+
+    </section>
+
+
+    <!-- ================= PAGE 6 ================= -->
+    <section class="page" id="page6">
+
+        <div class="last-question">
+
+            <div class="big-heart">💞</div>
+
+            <h1>
+                ga kerasa udah halaman terakhir
+            </h1>
+
+            <p>
+                mau liat momen bareng kita ga?
+            </p>
+
+            <div class="final-choices">
+
+                <button
+                    class="final-choice"
+                    data-final="yes"
+                >
+                    iyaa mauu ❤️
+                </button>
+
+                <button
+                    class="final-choice"
+                    data-final="veryyes"
+                >
+                    mauu bangett 💕
+                </button>
+
+            </div>
+
+        </div>
+
+        <button
+            class="next-btn"
+            id="page6Next"
+            onclick="nextPage()"
+            disabled
+        >
+            Lihat Momen Kita 📸 →
+        </button>
+
+    </section>
+
+
+    <!-- ================= PAGE 7 ================= -->
+    <section class="page gallery-page" id="page7">
+
+        <div class="gallery-header">
+
+            <span>Our Little Memories ❤️</span>
+
+            <h1>
+                Momen Bareng Kita
+            </h1>
+
+            <p>
+                Udaa 3 tahunn ternyataa kitaa,
+                next kemana lagi yaaa.
+            </p>
+
+        </div>
+
+        <div class="gallery">
+
+            <div class="memory-card card1">
+                <img src="https://i.imgur.com/XKFOU0c.jpeg" alt="Kenangan 1">
+                <span>Ini pas di Salatiga ❤️</span>
+            </div>
+
+            <div class="memory-card card2">
+                <img src="https://i.imgur.com/EUN4aJ0.jpeg" alt="Kenangan 2">
+                <span>Ini di sempronya kamu 💕</span>
+            </div>
+
+            <div class="memory-card card3">
+                <img src="https://i.imgur.com/XP7JmxW.jpeg" alt="Kenangan 3">
+                <span>Ini di Semhasnya kamu 🥰</span>
+            </div>
+
+            <div class="memory-card card4">
+                <img src="https://i.imgur.com/oEJVYuI.jpeg" alt="Kenangan 4">
+                <span>Kuatkan akuu 💗</span>
+            </div>
+
+            <div class="memory-card card5">
+                <img src="https://i.imgur.com/rSiOm1w.jpeg" alt="Kenangan 5">
+                <span>Ini di Lawang sewu ❤️</span>
+            </div>
+
+            <div class="memory-card card6">
+                <img src="https://i.imgur.com/seoOvIw.jpeg" alt="Kenangan 6">
+                <span>Anjayy lagi diatas 💍</span>
+            </div>
+
+        </div>
+
+        <div class="ending">
+
+            <h2>
+                Terima kasih sudah menjadi
+                bagian terindah di hidupku ya sayangg ❤️
+            </h2>
+
+            <p>
+                Happy Birthday &
+                Happy 3rd Anniversary, Sayanggg! ❤️
+            </p>
+
+            <div class="ending-hearts">
+                ❤️ 💕 ❤️ 💕 ❤️
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Custom Notification -->
+    <div id="notification"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
